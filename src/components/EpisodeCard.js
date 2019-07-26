@@ -1,15 +1,15 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-export default function LocationCard (props) {
+export default function EpisodeCard (props) {
   return   <Card>
    <Card.Content>
-    <Card.Header>{props.location.name}</Card.Header>
+    <Card.Header>{props.episode.name}</Card.Header>
     <Card.Meta>
-      <span className='date'>{props.location.dimension}</span>
+      <span className='date'>{props.episode.airdate}</span>
     </Card.Meta>
     <Card.Description>
-    {props.location.type}
+    {props.episode.episode}
 
     </Card.Description>
   </Card.Content>
