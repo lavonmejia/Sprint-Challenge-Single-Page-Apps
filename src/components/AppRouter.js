@@ -11,7 +11,7 @@ export default function AppRouter() {
     <Route path='/episodes' component={EpisodeList} />
       <Route path='/characters' component={CharacterList} />
       <Route path='/locations' component={LocationsList} />
-      <Route path ='/' component={WelcomePage} />
+      <Route path exact ='/' component={WelcomePage} />
      
     </Switch>
   </div>
